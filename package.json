@@ -1,9 +1,10 @@
 {
-  "name": "number-guessing-game",
-  "version": "1.0.0",
+  "name": "tx3-number-guessing-game",
+  "version": "2.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "game.js",
   "type": "module",
+  "bin": "game.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
