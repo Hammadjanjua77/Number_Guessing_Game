@@ -1,5 +1,6 @@
+#! /usr/bin/env node
 import inquirer from "inquirer";
-let favouriteNumber = 70;
+let randomNumber = Math.floor(Math.random() * 10 + 1);
 let guessingNumber = await inquirer.prompt([
     {
         message: "Enter Your Number",
@@ -7,15 +8,10 @@ let guessingNumber = await inquirer.prompt([
         name: "YourGuess",
     },
 ]);
-if (guessingNumber.YourGuess < 70) {
-    console.log("opp's! your Number is too Low ");
-}
-else if (guessingNumber.YourGuess > 70) {
-    console.log("opp's! your Number is too High ");
-}
-else if (guessingNumber.YourGuess === 70) {
-    console.log("Congratulation! You Guess Correct Number ");
+//conditional test
+if (guessingNumber.YourGuess === randomNumber) {
+    console.log("congtratulations! You Guess Is Right...........");
 }
 else {
-    console.log("Try Again !!!!!!!!!!");
+    console.log("Oops! You Guess Is Wrong....");
 }
